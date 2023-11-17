@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Rye&display=swap');
+
+/* Configurações gerais */
+* {
+    font-family: "Poppins";
+    letter-spacing: -1px;
+}
+
+button {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #2e2e2e;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+
+#display {
+    display: flex;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* Primeira área - Tracker de gastos */
+.table {
+    height: 11rem;
+    background: #da9dff;
+    padding: 2rem;
+    width: 24rem;
+    margin-right: 26px;
+}
+
+.table h1 {
+    margin-top: 1rem;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.table p {
+    margin-left: 2rem;
+    margin-top: -1rem;
+}
+
+.saldo-dinamico-verde {
+    color: rgb(57, 124, 55);
+}
+
+.saldo-dinamico-vermelho {
+    color: rgb(199, 40, 40);
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+/* Segunda área - Inserção de dados */
+.display-inserir-dados {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    height: 12rem;
+    width: 10rem;
+    background: #da9dff;
+    margin-top: -15rem;
+    padding: 2rem;
+}
+
+.btn-adicionar {
+    color: rgb(85, 44, 44);
+    border: none;
+    width: 7rem;
+}
+
+input {
+    color: black;
+    width: 8rem;
+    padding: 0.5rem;
+    border: none;
+    margin-top: 0.3px;
+    
+}
+
+select {
+    color: rgb(99, 90, 90);
+    width: 9rem;
+    padding: 0.4rem;
+    margin-top: 1px;
+    border: none;
+
+}
+
+.btn-adicionar {
+    color: white;
+    background-color: #281c2f;
+    width: 9rem;
+    padding: 6px;
+    margin-top: 5px;
+}
+
+.btn-adicionar:hover {
+    background-color: rgb(103, 179, 103);
+    color: black;
+    transition: 0.6s ease;
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+/* Terceira área - Display do Mês  */
+.vitrine {
+    overflow-y: auto;
+    height: 380px;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+.vitrine::-webkit-scrollbar {
+    width: 2px; 
+  }
+
+.vitrine::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+
+.div-icones {
+    margin-right: 0.8rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.botao-excluir {
+    background-color: #9747ff;
+    color: white;
+    border: none;
+    padding: 0px 6px;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    transform: rotate(90deg);
+    margin-right: 10px;
+}
+
+.infos2 {
+    margin-top: -0.2rem;
+}
+
+.area-display-mensal {
+    height: 32rem;
+    width: 80%;
+    background: #FBF7FF;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+.display-mes {
+    font-size: 2.5rem;
+    margin-left: 4rem;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+}
+
+.btn-alterar-mes    {
+    /* width: 3rem; */
+    margin-left: 20px;
+    /* margin-top: -4.5rem; */
+    background-color: #9747ff;
+    color: white;
+    border-color: #9747ff;
+    font-size: 1.5rem;
+}
+
+.btn-voltar-mes {
+    /* width: 3rem; */
+    /* margin-left: 54rem; */
+    /* margin-top: -4.5rem; */
+    background-color: #9747ff;
+    color: white;
+    border-color: #9747ff;
+    font-size: 1.5rem;
+}
+
+.title-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-buttons-mes {
+    margin-right: 30px;
+}
+
+.gasto-detalhado-entrada {
+    display: flex;
+    align-items: center;
+    width: 82%;
+    color: rgb(23, 143, 23);
+    margin-left: 5rem;
+    font-size: 1.2rem;
+    padding: 5px;
+    justify-content: space-between;
+}   
+
+.gasto-detalhado-saida {
+    display: flex;
+    align-items: center;
+    width: 82%;
+    color: rgb(240, 74, 74);
+    margin-left: 5rem;
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.gasto-detalhado-entrada:hover, .gasto-detalhado-saida:hover {
+    /* text-decoration: underline; */
+    text-underline-offset: 0.5rem;
+    text-decoration-color: rgb(156, 144, 144);
+}
+
+.divEmpty {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 0 95px;   
+    font-size: 1.2rem;
+}
+
+.contentEmpty {
+    color: #343a40;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+  
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+/* Quarta área - Gráficos  */
+.area-display-graficos {
+    height: 16rem;
+    width: 80%;
+    background: #FBF7FF;
+    margin-top: 10px;
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+.btn-alterar-grafico {
+    position: absolute;
+    width: 3rem;
+    background-color: #9747ff;
+    color: white;
+    border-color: #9747ff;
+    font-size: 1.5rem;
+    margin-left: 56.8rem;
+}
+
+.btn-voltar-grafico {
+    position: absolute;
+    width: 3rem;
+    background-color: #9747ff;
+    color: white;
+    border-color: #9747ff;
+    font-size: 1.5rem;
+    margin-left: 52.8rem;
+}
+
+#graficos h1 {
+    /* position: absolute; */
+    margin-left: 2rem;
+}
+
+#graficos {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.grafic-one {
+    height: 11rem;
+    width: 446px;
+    padding: 2rem;
+}
+
+.container-grafico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+    height: 16rem;
+}
+
+.dinamic-grafic-only {
+    width: 400px;
+    height: 400px;
+    margin-left: 90px;
+}
+
+.text-transaction:hover {
+    text-decoration: underline;
+}
+
+#formulario {
+    margin-left: 11px;
+}
+
